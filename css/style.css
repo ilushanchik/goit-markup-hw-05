@@ -650,7 +650,10 @@ color: var(--WHITE, #fff);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         background-color: transparent;
         padding-left: 16px;
-        color: #ffffff;   
+        color: #ffffff; 
+        font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.04em;
 }
 
 .footer-input:focus {
@@ -709,7 +712,7 @@ top: 0;
  opacity: 0;
  visibility: hidden;
  pointer-events: none;
- transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),;
+transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-open {
@@ -758,13 +761,17 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 
 
-.modal-off-btn:hover{
+.modal-off-btn:hover,
+.modal-off-btn:focus{
     background-color: #404bbf;
     border: none;
 }
 
-.modal-off-btn:hover .icon-off-btn{
-fill: #FFFFFF;
+
+.modal-off-btn:hover .icon-off-btn,
+.modal-off-btn:focus .icon-off-btn
+{
+fill: #ffffff
 }
 
 
@@ -794,7 +801,7 @@ margin-bottom: 8px;
 color: var(--LIGHT-SLATE, #8E8F99);
     font-size: 12px;
     font-weight: 400;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     margin-bottom: 4px;
 }
@@ -822,6 +829,7 @@ color: var(--LIGHT-SLATE, #8E8F99);
     position: absolute;
     left: 16px;
     top: 50%;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(-50%);
     fill: #2E2F42;
 }
@@ -836,7 +844,7 @@ color: var(--LIGHT-SLATE, #8E8F99);
 }
 
 .modal-field-textarea{
-    margin-bottom: 0;
+    margin-bottom: 16px;
 }
 
 
@@ -879,7 +887,7 @@ border-color: #4d5ae5;
 
 .checkbox-container {
     margin-bottom: 24px;
-    margin-top: 16px;
+    
 }
 
 
@@ -913,7 +921,7 @@ border-color: #4d5ae5;
 
 
 .send-modal-btn { 
-    display: inline-block;
+    display:block;
             border-radius: 4px;
                 background: #4d5ae5;
                 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -924,7 +932,10 @@ border-color: #4d5ae5;
                 margin: 0 auto;
                 cursor: pointer;
                 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            transform: translateX(50%)
+            font-weight: 500;
+            line-height: 1.5;
+            letter-spacing: 0.04em;
+            color: #ffffff;
            
 }
 
